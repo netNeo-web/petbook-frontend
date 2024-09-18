@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Petbook - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Recuerda ejecutar `npm install` para instalar las dependencias cuando clones el proyecto!
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React.js** → con **Typescript**
+- **React Router** → Rutas
+- **Axios** → HTTP
+- **Barrel export** → Importaciones mucho más organizadas y limpias
+- **React Localization** → Multi-idioma (traducciones)
 
-## Expanding the ESLint configuration
+## Carpetas:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **`assets/`** → Para recursos estáticos (imágenes, iconos, etc.).
 
-- Configure the top-level `parserOptions` property like this:
+- **`components/`** → Componentes reutilizables con carpetas individuales, manteniendo el **SRP** (Principio de Responsabilidad Única).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **`hooks/`** → Custom hooks.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **`interfaces/`** → Definiciones de interfaces.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **`pages/`** → Cada pantalla corresponde a una página, y cada página tiene su propia carpeta con:
+  - El componente `.tsx`.
+  - Su CSS propio.
+  - Su `index.ts` para la exportación de barril.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- **`routes/`** → Rutas de la aplicación.
+
+- **`services/`**:
+  - **`apiService.ts`** → Instancia de Axios y las funciones CRUD.
+  - **`services.ts`** → Almacena las llamadas específicas a los endpoints del backend.
+  - **`authService.ts`** → Maneja la autenticación (vacío por ahora).
+
+- **`store/`** → Para manejar el estado global. Aún por decidir entre **Redux** o **Zustand**.
+
+- **`utils/`** → Utilidades y helpers (vacío por ahora).
