@@ -5,7 +5,7 @@ import { useExampleHook, useAnotherHook } from '../../hooks'
 import {getAllUsersParams} from '../../services';
 import { useEffect } from 'react';
 import { strings } from '../../utils'
-import { ChatModal } from '../../components';
+import { ChatModal, LoadingSpinner } from '../../components';
 import { SearchService, OfferService, ChatList, Candidates, CandidateProfile } from '../../pages';
 // import { User } from '../../interfaces'
 
@@ -38,6 +38,7 @@ const Home = () => {
         <ChatModal/>
         <SearchService/>
         <CandidateProfile/>
+        <LoadingSpinner/>
     </div>
   )
 }
