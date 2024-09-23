@@ -1,11 +1,21 @@
-import React from 'react'
-import './TextField.css'
+import React from 'react';
+import './TextField.css';
 
-const TextField = () => {
-  return (
-    <>
-    </>
-  )
+interface TextFieldProps {
+  placeholder?: string;
+  type?: string;
 }
 
-export default TextField
+const TextField = (props: TextFieldProps) => {
+  return (
+    <>
+      <input 
+        className="custom-input"
+        placeholder={props.placeholder} 
+        type={props.type}
+      />
+    </>
+  );
+};
+
+export default TextField;

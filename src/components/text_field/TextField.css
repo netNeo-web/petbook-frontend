@@ -1,0 +1,23 @@
+.custom-input {
+    box-sizing: border-box;
+    min-width: 326px;
+    min-height: 50px;
+    background-color: #f0f0f0;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 12px;
+
+    font-weight: 500;
+    color: #484848;
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+}
+
+.custom-input::placeholder {
+    /* Probar 500 VS 600 */
+    font-weight: 500;
+    color: #B2AFAF;
+    font-size: 16px;
+    font-family: 'Hind', sans-serif;
+}
