@@ -4,7 +4,7 @@ PetBook is a collaborative app that connects pet owners with service providers. 
 ## Additional Documentation
 - [Project Details](project-details.md)
 
-# Petbook - Frontend
+# Petbook - Frontend Technical Documentation
 
 Remember to run `npm install` to install dependencies when you clone the project!
 
