@@ -1,0 +1,19 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* APP COLOR VARIABLES */
+:root {
+  --primary-light-color: #bfe38c;
+  --primary-dark-color: #a5c47a;
+  --secondary-light-color: #92abde;
+  --secondary-dark-color: #8298c4;
+  --highlight-light-color: #f4bfca;
+  --highlight-dark-color: #ed95a7;
+  ---light-color: #ffffff;
+  --dark-white-color: #f0f0f0;
+  --dark-black-color: #000000;
+  --light-black-color: #0c0c0c;
+}
