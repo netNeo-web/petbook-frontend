@@ -1,17 +1,8 @@
-import { TextField } from '../../components'
-import './Home.css'
-
-
+import { TextField } from '../../components';
+import './Home.css';
 
 const Home = () => {
-  return (
-    <>
-      <TextField
-        placeholder="Prueba de Placeholder"
-        // type="email"
-      />
-    </>
-  )
-}
+  return <></>;
+};
 
-export default Home
+export default Home;

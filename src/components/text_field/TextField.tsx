@@ -4,15 +4,17 @@ import './TextField.css';
 interface TextFieldProps {
   placeholder?: string;
   type?: string;
+  required?: boolean;
 }
 
 const TextField = (props: TextFieldProps) => {
   return (
     <>
-      <input 
+      <input
         className="custom-input"
-        placeholder={props.placeholder} 
+        placeholder={props.placeholder}
         type={props.type}
+        required={props.required}
       />
     </>
   );
