@@ -1,0 +1,36 @@
+.button {
+  padding: 0 12px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 1;
+  border: none;
+  cursor: pointer;
+}
+
+.button.small {
+  font-size: 0.875rem; /* text-sm */
+  width: 150px;
+  height: 35px;
+}
+
+.button.medium {
+  font-size: 1rem; /* text-base */
+  width: 185px;
+  height: 40px;
+}
+
+.button.large {
+  font-size: 1.125rem; /* text-lg */
+  width: 218px;
+  height: 45px;
+}
+
+.button.primary {
+  background-color: #bfe38c;
+  color: black;
+}
+
+.button.secondary {
+  background-color: #92abde;
+  color: black;
+}
