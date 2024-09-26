@@ -1,0 +1,23 @@
+.text-box {
+  margin: 0;
+  padding: 0;
+  border: transparent;
+  box-sizing: border-box;
+  resize: none;
+  border-radius: 10px;
+  min-width: 326px;
+  min-height: 120px;
+  background-color: var(--dark-white-color);
+  padding: 11px 12px;
+  outline: none;
+
+  font-family: 'Hind', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-box-label {
+  font-size: 12px;
+  color: #b2afaf;
+  font-weight: 500;
+}
