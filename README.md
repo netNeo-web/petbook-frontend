@@ -1,8 +1,10 @@
 # petbook-frontend
+
 PetBook is a collaborative app that connects pet owners with service providers. Users can easily find and hire services such as veterinarians, pet sitters, trainers, and more. The platform features two main user types: service seekers and providers. Key features include distinct profiles, real-time chat, geolocation, and essential functionalities.
 
 ## Additional Documentation
-- [Project Details](project-details.md)
+
+- [Project Details](documents/project-details.md)
 
 # Petbook - Frontend Technical Documentation
 
@@ -27,6 +29,7 @@ Remember to run `npm install` to install dependencies when you clone the project
 - **`interfaces/`** → Interface definitions.
 
 - **`pages/`** → Each screen corresponds to a page, and each page has its own folder with:
+
   - The `.tsx` component.
   - Its own CSS.
   - Its `index.ts` for barrel export.
@@ -34,6 +37,7 @@ Remember to run `npm install` to install dependencies when you clone the project
 - **`routes/`** → Application routes.
 
 - **`services/`**:
+
   - **`apiService.ts`** → Axios instance and CRUD functions.
   - **`services.ts`** → Stores specific calls to backend endpoints.
   - **`authService.ts`** → Handles authentication (empty for now).
